@@ -17,11 +17,14 @@ internal static class ModulesRegistration
     public static IMvcBuilder AddApplicationParts(this IMvcBuilder mvcBuilder)
     {
         return mvcBuilder
-            .AddExpensesControllers();
+            .AddExpensesControllers()
+            .AddDashboardsControllers();
     }
 
     public static void RegisterServices(this IServiceCollection services, IConfiguration configuration)
     {
-        services.RegisterExpensesServices(configuration);
+        services
+            .RegisterExpensesServices(configuration)
+            .RegisterDashboardsServices(configuration);
     }
 }

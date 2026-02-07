@@ -1,6 +1,6 @@
 ﻿namespace Common.Dtos;
 
-public class UserDto
+public class CategoryDto
 {
     public string Name { get; set; }
 }

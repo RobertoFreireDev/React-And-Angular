@@ -7,3 +7,4 @@ global using System.Reflection;
 global using personal_finance_manager;
 
 global using ExpensesModule.Public;
+global using DashboardModule.Public;

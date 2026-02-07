@@ -7,9 +7,12 @@ public static class ExpensesModuleRegistration
         return mvcBuilder.AddApplicationPart(typeof(ExpensesModuleRegistration).Assembly);
     }
 
-    public static void RegisterExpensesServices(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection RegisterExpensesServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddSingleton<IExpenseService, ExpenseService>();
         services.AddSingleton<IBudgetService, BudgetService>();
+        services.AddSingleton<ICategoryService, CategoryService>();
+
+        return services;
     }
 }

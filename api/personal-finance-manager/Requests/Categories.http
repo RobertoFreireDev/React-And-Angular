@@ -1,0 +1,17 @@
+﻿@host = https://localhost:7297
+
+### Get categories
+Get {{host}}/api/v1.0/categories
+Accept: application/json
+
+### Create or update category
+Post {{host}}/api/v1.0/categories
+Content-Type: application/json
+Accept: application/json
+{
+    "name" : "Food"
+}
+
+### Delete category
+Delete {{host}}/api/v1.0/categories/Food
+Accept: application/json
