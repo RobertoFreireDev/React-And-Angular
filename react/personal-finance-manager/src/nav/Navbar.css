@@ -1,0 +1,53 @@
+/* ===== NAVBAR ===== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding: 16px 24px;
+
+  background: #0f172a; /* slate-900 */
+  border-bottom: 1px solid #1e293b;
+}
+
+/* ===== LINKS ===== */
+nav a {
+  position: relative;
+  color: #cbd5f5; /* slate-300 */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8; /* sky-400 */
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    gap: 32px;
+  }
+}
