@@ -2,11 +2,6 @@
 
 ## Core Features:
 
-### Authentication Module
-
-* Forms: Login, Signup
-* State Management: Store user session, authentication status
-
 ### Dashboard Module
 
 * Shows a summary of expenses, and budgets
@@ -23,6 +18,7 @@
 ### Notes:
 
 * Lazy Loading all modules
+* Global state for Categories
 
 # The same application implemented in 2 frameworks:
 
