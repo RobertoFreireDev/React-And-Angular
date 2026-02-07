@@ -1,4 +1,4 @@
-nav {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,7 +13,7 @@ nav {
   border-bottom: 1px solid #1e293b;
 }
 
-nav a {
+.navbar a {
   position: relative;
   color: #cbd5f5;
   text-decoration: none;
@@ -22,11 +22,11 @@ nav a {
   transition: color 0.2s ease;
 }
 
-nav a:hover {
+.navbar a:hover {
   color: #ffffff;
 }
 
-nav a::after {
+.navbar a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -37,20 +37,20 @@ nav a::after {
   transition: width 0.25s ease;
 }
 
-nav a:hover::after {
+.navbar a:hover::after {
   width: 100%;
 }
 
-nav a.active {
+.navbar a.active {
   color: #38bdf8;
 }
 
-nav a.active::after {
+.navbar a.active::after {
   width: 100%;
 }
 
 @media (max-width: 768px) {
-  nav {
+  .navbar {
     justify-content: center;
     gap: 32px;
   }
