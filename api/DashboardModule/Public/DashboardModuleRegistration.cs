@@ -9,7 +9,7 @@ public static class DashboardModuleRegistration
 
     public static IServiceCollection RegisterDashboardsServices(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddSingleton<IDashboardService, DashboardService>();
+        services.AddScoped<IDashboardService, DashboardService>();
 
         return services;
     }

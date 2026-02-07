@@ -7,3 +7,4 @@ global using DashboardModule.Internal.Application;
 global using DashboardModule.Internal.Application.Interfaces;
 
 global using Common.Dtos;
+global using Common.Modules;

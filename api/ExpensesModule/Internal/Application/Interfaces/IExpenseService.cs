@@ -4,6 +4,8 @@ internal interface IExpenseService
 {
     Task<List<ExpenseDto>> GetExpenses(CancellationToken cancellationToken);
 
+    Task<List<ExpenseDto>> GetExpenses(DateTime from, DateTime to, CancellationToken cancellationToken);     
+
     Task CreateExpense(ExpenseDto request, CancellationToken cancellationToken);
 
     Task UpdateExpense(ExpenseDto request, CancellationToken cancellationToken);

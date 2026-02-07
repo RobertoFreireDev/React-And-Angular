@@ -9,6 +9,13 @@ internal class ExpenseService : IExpenseService
         return Expenses;
     }
 
+    public async Task<List<ExpenseDto>> GetExpenses(DateTime from, DateTime to, CancellationToken cancellationToken)
+    {
+        return Expenses
+            .Where(e => e.Date >= from && e.Date <= to)
+            .ToList();
+    }
+
     public async Task CreateExpense(ExpenseDto request, CancellationToken cancellationToken)
     {
         request.Id = Guid.NewGuid();

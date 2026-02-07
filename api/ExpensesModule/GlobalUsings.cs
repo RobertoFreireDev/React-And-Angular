@@ -7,3 +7,4 @@ global using ExpensesModule.Internal.Application;
 global using ExpensesModule.Internal.Application.Interfaces;
 
 global using Common.Dtos;
+global using Common.Modules;

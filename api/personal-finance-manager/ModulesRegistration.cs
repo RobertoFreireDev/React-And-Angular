@@ -24,6 +24,9 @@ internal static class ModulesRegistration
     public static void RegisterServices(this IServiceCollection services, IConfiguration configuration)
     {
         services
+            .ExposeExpenseModule();
+
+        services
             .RegisterExpensesServices(configuration)
             .RegisterDashboardsServices(configuration);
     }

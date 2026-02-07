@@ -1,0 +1,5 @@
+﻿@host = https://localhost:7297
+
+### Get dashboards
+Get {{host}}/api/v1.0/dashboards?from=2026-01-01T00:00:00Z&to=2027-01-31T23:59:59Z
+Accept: application/json
