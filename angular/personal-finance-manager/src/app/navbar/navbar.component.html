@@ -1,9 +1,10 @@
 <nav class="navbar">
-  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-    Dashboard
-  </a>
-
-  <a routerLink="/expenses" routerLinkActive="active">
-    Expenses
+  <a
+    *ngFor="let route of routes"
+    [routerLink]="route.path"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: route.exact }"
+  >
+    {{ route.label }}
   </a>
 </nav>
